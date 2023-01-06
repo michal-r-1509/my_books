@@ -1,0 +1,17 @@
+<form #registrationForm="ngForm" (ngSubmit)="createUser(registrationForm)" class="mb-account-form">
+  <mat-form-field>
+    <mat-label>Nick</mat-label>
+    <input type="text" name="userName" matInput [(ngModel)]="userName">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input type="email" name="email" matInput [(ngModel)]="email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Haslo</mat-label>
+    <input type="password" name="password" matInput [(ngModel)]="password">
+  </mat-form-field>
+  <div>
+    <button mat-raised-button type="submit">Wyslij</button>
+  </div>
+</form>
